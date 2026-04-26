@@ -1,0 +1,10 @@
+{% extends "base.html" %}
+{% block title %}Police introuvable{% endblock %}
+{% block content %}
+<div class="container" style="text-align:center;padding-top:4rem;">
+  <div style="font-size:48px;margin-bottom:1rem;">🔍</div>
+  <h2 style="font-family:'Syne',sans-serif;font-weight:700;margin-bottom:0.5rem;">Police introuvable</h2>
+  <p style="color:var(--text-muted);margin-bottom:2rem;">Le QR code scanné ne correspond à aucun contrat enregistré.</p>
+  <p style="font-size:12px;color:var(--text-muted);font-family:monospace;">{{ police_id }}</p>
+</div>
+{% endblock %}
