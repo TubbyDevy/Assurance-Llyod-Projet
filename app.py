@@ -9,7 +9,7 @@ POLICES = {
         "client": "Mme Ghada Makni",
         "initiales": "GM",
         "vehicule": "Mercedes Classe C",
-        "immatriculation": "TUN-001-JR",
+        "immatriculation": "183 TN 4521",
         "compagnie": "Lloyd Assurances Tunisie",
         "type": "Tous risques",
         "statut": "valide",
