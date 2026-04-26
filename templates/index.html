@@ -1,0 +1,18 @@
+{% extends "base.html" %}
+{% block title %}STAR Assurances{% endblock %}
+{% block content %}
+<div class="container" style="text-align:center;padding-top:4rem;">
+  <div style="font-size:48px;margin-bottom:1rem;">🛡️</div>
+  <h1 style="font-family:'Syne',sans-serif;font-weight:700;font-size:28px;margin-bottom:0.5rem;">STAR Assurances</h1>
+  <p style="color:var(--text-muted);margin-bottom:2rem;">Système de gestion d'assurance automobile</p>
+  <a href="/admin" class="btn btn-gold" style="margin-bottom:1rem;">Accéder à l'administration</a>
+  <div style="margin-top:2rem;">
+    <p style="font-size:13px;color:var(--text-muted);margin-bottom:1rem;">Tester les 3 QR codes jurys :</p>
+    <div style="display:flex;flex-direction:column;gap:8px;">
+      <a href="/scan?police=POL-JURY-001" class="btn btn-outline">Jury 1 · Dr. Ahmed Mansour (Valide)</a>
+      <a href="/scan?police=POL-JURY-002" class="btn btn-outline">Jury 2 · Prof. Sonia Belhadj (Expirée)</a>
+      <a href="/scan?police=POL-JURY-003" class="btn btn-outline">Jury 3 · M. Karim Trabelsi (Valide)</a>
+    </div>
+  </div>
+</div>
+{% endblock %}
