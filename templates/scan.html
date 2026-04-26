@@ -33,9 +33,6 @@
 
 {% block content %}
 <div class="hero-badge" style="align-items:center;width:100%;text-align:center;">
-  <div class="status-ring {{ 'valid' if p.statut == 'valide' else 'expired' }}">
-    {{ '✓' if p.statut == 'valide' else '✕' }}
-  </div>
   <span class="badge {{ 'badge-valid' if p.statut == 'valide' else 'badge-expired' }}">
     {{ '● Assurance valide' if p.statut == 'valide' else '● Assurance expirée' }}
   </span>
