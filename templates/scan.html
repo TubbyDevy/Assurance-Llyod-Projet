@@ -39,8 +39,8 @@
   <span class="badge {{ 'badge-valid' if p.statut == 'valide' else 'badge-expired' }}">
     {{ '● Assurance valide' if p.statut == 'valide' else '● Assurance expirée' }}
   </span>
-  <p style="margin-top:0.75rem;font-size:22px;font-weight:600;font-family:'Syne',sans-serif;">{{ p.immatriculation }}</p>
-  <p style="font-size:13px;color:var(--text-muted);margin-top:4px;">{{ p.vehicule }}</p>
+  <p style="margin-top:0.75rem;font-size:22px;font-weight:600;font-family:'Syne',sans-serif;text-align:center;">{{ p.immatriculation }}</p>
+  <p style="font-size:13px;color:var(--text-muted);margin-top:4px;text-align:center;">{{ p.vehicule }}</p>
 </div>
 
 <div class="container">
