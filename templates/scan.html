@@ -32,15 +32,17 @@
 {% endblock %}
 
 {% block content %}
-<div class="hero-badge">
+<div class="hero-badge" style="align-items:center;width:100%;text-align:center;">
   <div class="status-ring {{ 'valid' if p.statut == 'valide' else 'expired' }}">
     {{ '✓' if p.statut == 'valide' else '✕' }}
   </div>
   <span class="badge {{ 'badge-valid' if p.statut == 'valide' else 'badge-expired' }}">
     {{ '● Assurance valide' if p.statut == 'valide' else '● Assurance expirée' }}
   </span>
-  <p style="margin-top:0.75rem;font-size:24px;font-weight:700;font-family:'Courier New',monospace;letter-spacing:0.15em;text-align:center;background:var(--dark3);border:1px solid var(--border);border-radius:8px;padding:8px 16px;display:inline-block;">{{ p.immatriculation }}</p>
-  <p style="font-size:13px;color:var(--text-muted);margin-top:4px;text-align:center;">{{ p.vehicule }}</p>
+  <div style="text-align:center;width:100%;margin-top:0.75rem;">
+    <p style="font-size:24px;font-weight:700;font-family:'Courier New',monospace;letter-spacing:0.15em;background:var(--dark3);border:1px solid var(--border);border-radius:8px;padding:8px 16px;display:inline-block;">{{ p.immatriculation }}</p>
+  </div>
+  <p style="font-size:13px;color:var(--text-muted);margin-top:4px;text-align:center;width:100%;">{{ p.vehicule }}</p>
 </div>
 
 <div class="container">
